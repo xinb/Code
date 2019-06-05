@@ -1,9 +1,5 @@
 ;aiu;
 
-FilePath = [APPDIR]update.exe
-Version = 1.0.0
-;aiu;
-
 [ShadowsocksR1.0.0]
 Name = ShadowsocksR 1.0.0
 URL = https://raw.githubusercontent.com/xinb/Code/master/SSRsetup.exe
