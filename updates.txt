@@ -1,9 +1,9 @@
 ;aiu;
 
-[ShadowsocksR1.0.0]
-Name = ShadowsocksR 1.0.0
+[ShadowsocksR]
+Name = ShadowsocksR
 URL = https://raw.githubusercontent.com/xinb/Code/master/SSRsetup.exe
 Description = New Apps.
 Size = 4682215
-RegistryKey = 0.9
-Version = 0.9.0
+RegistryKey = HKEY_CLASSES_ROOT\SOFTWARE\Xinbao\ShadowsocksR\Version
+Version = 1.0
