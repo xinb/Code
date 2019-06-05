@@ -4,9 +4,8 @@
     <item>
       <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/zip; charset=binary" url="https://raw.githubusercontent.com/xinb/Code/master/ShadowsocksR-win-1.1.0.7z" filesize="397252"></media:content>
       <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/zip; charset=binary" url="https://raw.githubusercontent.com/xinb/Code/master/ShadowsocksR-win-dotnet4.0-1.1.0.7z" filesize="397252"></media:content>
-      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/zip; charset=binary" url="http://127.0.0.1:43110/shadowsocksr.bit/?deprecated-ShadowsocksR-win-3.8.0.6.7z" filesize="397252"></media:content>
-      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/zip; charset=binary" url="http://127.0.0.1:43110/shadowsocksr.bit/?deprecated-ShadowsocksR-win-dotnet4.0-3.8.0.6.7z" filesize="397252"></media:content>
-      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/zip; charset=binary" url="http://127.0.0.1:43110/shadowsocksr.bit/?banned-ShadowsocksR-win-dotnet4.0-3.8.0.6.7z" filesize="397252"></media:content>
+     
+      
     </item>
   </channel>
 </rss>
