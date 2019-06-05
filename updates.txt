@@ -3,8 +3,8 @@
 [ShadowsocksR1.0.0]
 Name = ShadowsocksR 1.0.0
 Description = 首次发布
-URL = http://www.myupdateslocation.com/download/myapplication2.0.msi
-Size = 654321
-ServerFileName = myapplication2.0.msi
-FilePath = [APPDIR]myapplication.exe
-Version = 2.0
+URL = https://raw.githubusercontent.com/xinb/Code/master/SSRsetup.exe
+Size = 4682215
+ServerFileName = SSRsetup.exe
+FilePath = [APPDIR]update.exe
+Version = 1.0.0
