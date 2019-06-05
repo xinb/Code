@@ -10,4 +10,4 @@ URL = https://raw.githubusercontent.com/xinb/Code/master/SSRsetup.exe
 Description = New Apps.
 Size = 4682215
 RegistryKey = HKEY_CLASSES_ROOT\SOFTWARE\Xinbao\ShadowsocksR\Version
-Version = 1.0.0
+Version = 0.9.0
