@@ -3,7 +3,7 @@
 [ShadowsocksR1.0.0]
 Name = ShadowsocksR 1.0.0
 Description = New Apps.
-URL = https://raw.githubusercontent.com/xinb/Code/master/SSRsetup.exe
+URL = https://myswjtueducn-my.sharepoint.com/personal/xinbao_my_swjtu_edu_cn/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2Fxinbao%5Fmy%5Fswjtu%5Fedu%5Fcn%2FDocuments%2F%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E5%8F%91%E5%B8%83%2FSSRsetup%2Eexe
 Size = 4682215
 ServerFileName = SSRsetup.exe
 FilePath = [APPDIR]update.exe
