@@ -2,7 +2,7 @@
 
 [ShadowsocksR1.0.0]
 Name = ShadowsocksR 1.0.0
-Description = 首次发布
+Description = New Apps.
 URL = https://raw.githubusercontent.com/xinb/Code/master/SSRsetup.exe
 Size = 4682215
 ServerFileName = SSRsetup.exe
