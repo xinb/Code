@@ -1,0 +1,31 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+	cout << "     程序作者学号为：2018112048\n     程序作者姓名为：李鑫宝" << endl;
+	//定义变量及指针
+	int x, n;
+	double  sum;
+	int* p, * q;
+	double* s;
+	p = &x;
+	q = &n;
+	s = &sum;
+	cout << "请依次输入x和n的值：";
+	cin >> *p>> * q;
+	*s = 0;
+	cout << "sum=";
+	//计算全部项之和sum，并依次输出各项的值
+	for (int i = 0,j=0; i < *q; i++)
+	{
+		double k = 1;
+		j = pow(*p, i + 1);
+		for (int c = i+1; c > 0; c--)
+		k = k * c;
+		*s = *s + j / k;
+		cout << j / k << "+";
+	}
+	cout << "\b=" << *s << endl;
+	system("pause");
+}
