@@ -27,27 +27,6 @@
     },
        
     // 3_分流设置
-    "routing": {
-        "domainStrategy": "AsIs",
-        "rules": [
-            // 3.1 防止服务器本地流转问题：如内网被攻击或滥用、错误的本地回环等
-            {
-                "type": "field",
-                "ip": [
-                    "geoip:private"    // 分流条件：geoip文件内，名为"private"的规则（本地）
-                ],
-                "outboundTag": "block"    // 分流策略：交给出站"block"处理（黑洞屏蔽）
-            },
-            // 3.2 屏蔽广告
-            {
-                "type": "field",
-                "domain": [
-                    "geosite:category-ads-all"    // 分流条件：geosite文件内，名为"category-ads-all"的规则（各种广告域名）
-                ],
-                "outboundTag": "block"    // 分流策略：交给出站"block"处理（黑洞屏蔽）
-            }
-        ]
-    },
    
     // 4_入站设置
     // 4.1 这里只写了一个最简单的vless+xtls的入站，因为这是Xray最强大的模式。如有其他需要，请根据模版自行添加。
