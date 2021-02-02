@@ -1,0 +1,233 @@
+
+name: xedu订阅更新
+
+env:
+  TZ: Asia/Shanghai
+
+on:
+  # 当master分支提交时
+  workflow_dispatch:
+  push:
+    branches: 
+      - code
+
+# 开始任务
+jobs:
+  main:
+    runs-on: ubuntu-20.04
+
+    steps:
+    # 安装和构建
+    - name: 更新订阅
+      run: |
+        curl 'https://v2.freeyes.xyz/user/buy' \
+        -H 'authority: v2.freeyes.xyz' \
+        -H 'accept: application/json, text/javascript, */*; q=0.01' \
+        -H 'x-requested-with: XMLHttpRequest' \
+        -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36 Edg/87.0.664.41' \
+        -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
+        -H 'origin: https://v2.freeyes.xyz' \
+        -H 'sec-fetch-site: same-origin' \
+        -H 'sec-fetch-mode: cors' \
+        -H 'sec-fetch-dest: empty' \
+        -H 'referer: https://v2.freeyes.xyz/user/shop' \
+        -H 'accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7,en-GB;q=0.6' \
+        -H 'cookie: __cfduid=d198ba53e31d66a8ba5954fc5aa5ffc591612246713; PHPSESSID=72cd0iqr2f891hi2otc0ch565e; uid=580633; email=coco.coco%40co.com; key=68842e62b5f6cc8395c47213abf18195099766ba37b3d; ip=7d4d21141e0ceb97398631c6ecc19617; expire_in=1615011586' \
+        --data-raw 'coupon=&shop=8&autorenew=1&disableothers=1' \
+        --compressed
+        curl 'https://v2.freeyes.xyz/user/buy' \
+        -H 'authority: v2.freeyes.xyz' \
+        -H 'accept: application/json, text/javascript, */*; q=0.01' \
+        -H 'x-requested-with: XMLHttpRequest' \
+        -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36 Edg/87.0.664.41' \
+        -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
+        -H 'origin: https://v2.freeyes.xyz' \
+        -H 'sec-fetch-site: same-origin' \
+        -H 'sec-fetch-mode: cors' \
+        -H 'sec-fetch-dest: empty' \
+        -H 'referer: https://v2.freeyes.xyz/user/shop' \
+        -H 'accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7,en-GB;q=0.6' \
+        -H 'cookie: PHPSESSID=qht2ites4pc32p4hsu1g4nu2b4; __cfduid=d8f133259f320b350ee12637308d4e49b1612247214; uid=580637; email=testuo%40diua.com; key=8474b1fa9229e42c7a0707c60759276b4aa7f94f38e6f; ip=514e0e7e717728449167c5fd46c3ccf4; expire_in=1615012423' \
+        --data-raw 'coupon=&shop=8&autorenew=1&disableothers=1' \
+        --compressed
+        curl 'https://v2.freeyes.xyz/user/buy' \
+        -H 'authority: v2.freeyes.xyz' \
+        -H 'accept: application/json, text/javascript, */*; q=0.01' \
+        -H 'x-requested-with: XMLHttpRequest' \
+        -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36 Edg/87.0.664.41' \
+        -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
+        -H 'origin: https://v2.freeyes.xyz' \
+        -H 'sec-fetch-site: same-origin' \
+        -H 'sec-fetch-mode: cors' \
+        -H 'sec-fetch-dest: empty' \
+        -H 'referer: https://v2.freeyes.xyz/user/shop' \
+        -H 'accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7,en-GB;q=0.6' \
+        -H 'cookie: PHPSESSID=e3eggkggo156vtutqjmt0qrj0c; __cfduid=d338e36b41a58219c42595e1cbd315e521612247692; uid=580641; email=uuid%40gmail.com; key=93c178c69e12735743ed1dd22045ba2cae0c7b6d67ed7; ip=e34160a9841c13ebdbcaf6f50d63ee0a; expire_in=1615012725' \
+        --data-raw 'coupon=&shop=8&autorenew=1&disableothers=1' \
+        --compressed
+        curl 'https://v2.freeyes.xyz/user/buy' \
+        -H 'authority: v2.freeyes.xyz' \
+        -H 'accept: application/json, text/javascript, */*; q=0.01' \
+        -H 'x-requested-with: XMLHttpRequest' \
+        -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36 Edg/87.0.664.41' \
+        -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
+        -H 'origin: https://v2.freeyes.xyz' \
+        -H 'sec-fetch-site: same-origin' \
+        -H 'sec-fetch-mode: cors' \
+        -H 'sec-fetch-dest: empty' \
+        -H 'referer: https://v2.freeyes.xyz/user/shop' \
+        -H 'accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7,en-GB;q=0.6' \
+        -H 'cookie: PHPSESSID=1o3cb1g2sk5b03tq6vpe7d31v9; __cfduid=d36f9f63b735bb7bf9609560dda1912d31612247957; uid=580642; email=coco%40co.com; key=89690a274767051d0577fe561d21ffa2650733cdd6e92; ip=6901a19ce58bf8f54c64041acf4891bc; expire_in=1615012818' \
+        --data-raw 'coupon=&shop=8&autorenew=1&disableothers=1' \
+        --compressed
+        curl 'https://v2.freeyes.xyz/user/buy' \
+        -H 'authority: v2.freeyes.xyz' \
+        -H 'accept: application/json, text/javascript, */*; q=0.01' \
+        -H 'x-requested-with: XMLHttpRequest' \
+        -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36 Edg/87.0.664.41' \
+        -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
+        -H 'origin: https://v2.freeyes.xyz' \
+        -H 'sec-fetch-site: same-origin' \
+        -H 'sec-fetch-mode: cors' \
+        -H 'sec-fetch-dest: empty' \
+        -H 'referer: https://v2.freeyes.xyz/user/shop' \
+        -H 'accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7,en-GB;q=0.6' \
+        -H 'cookie: PHPSESSID=3rrq07kqvpf49vj5gk7932mnm4; __cfduid=dda4a859bdc9b02acda444c6a3c9688ad1612248050; uid=580643; email=telegrams%40telegram.com; key=0adb46fa8743051c645a412db438a2f324fc0e68a62ea; ip=dcec9f8a9a0de3dcc44bf1040030f754; expire_in=1615012911' \
+        --data-raw 'coupon=&shop=8&autorenew=1&disableothers=1' \
+        --compressed
+        curl 'https://v2.freeyes.xyz/user/buy' \
+        -H 'authority: v2.freeyes.xyz' \
+        -H 'accept: application/json, text/javascript, */*; q=0.01' \
+        -H 'x-requested-with: XMLHttpRequest' \
+        -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36 Edg/87.0.664.41' \
+        -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
+        -H 'origin: https://v2.freeyes.xyz' \
+        -H 'sec-fetch-site: same-origin' \
+        -H 'sec-fetch-mode: cors' \
+        -H 'sec-fetch-dest: empty' \
+        -H 'referer: https://v2.freeyes.xyz/user/shop' \
+        -H 'accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7,en-GB;q=0.6' \
+        -H 'cookie: PHPSESSID=m806kjh3q6m0perpjvpposnbb9; __cfduid=d1fd8f57761c072dfbc31a8f94df92a641612248149; uid=580644; email=notice%40hhh.com; key=a8515367468978900ed29afcc98d72f4135920f35891b; ip=9d1c9cec1cb5a90d50564e0209c50851; expire_in=1615013000' \
+        --data-raw 'coupon=&shop=8&autorenew=1&disableothers=1' \
+        --compressed
+        curl 'https://v2.freeyes.xyz/user/buy' \
+        -H 'authority: v2.freeyes.xyz' \
+        -H 'accept: application/json, text/javascript, */*; q=0.01' \
+        -H 'x-requested-with: XMLHttpRequest' \
+        -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36 Edg/87.0.664.41' \
+        -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
+        -H 'origin: https://v2.freeyes.xyz' \
+        -H 'sec-fetch-site: same-origin' \
+        -H 'sec-fetch-mode: cors' \
+        -H 'sec-fetch-dest: empty' \
+        -H 'referer: https://v2.freeyes.xyz/user/shop' \
+        -H 'accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7,en-GB;q=0.6' \
+        -H 'cookie: PHPSESSID=b73ngln9tfaf4st0b4mp09hpn9; __cfduid=daf24e9f18da97e74b820f5d3d25a114c1612248230; uid=580645; email=netww%40outlook.com; key=5e0080c5dc9aee8f1759abd2a9e0c46c0d3c6ea571ea3; ip=09cc5b598d7715b7a6164100606647d0; expire_in=1615013098' \
+        --data-raw 'coupon=&shop=8&autorenew=1&disableothers=1' \
+        --compressed
+        curl 'https://v2.freeyes.xyz/user/buy' \
+        -H 'authority: v2.freeyes.xyz' \
+        -H 'accept: application/json, text/javascript, */*; q=0.01' \
+        -H 'x-requested-with: XMLHttpRequest' \
+        -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36 Edg/87.0.664.41' \
+        -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
+        -H 'origin: https://v2.freeyes.xyz' \
+        -H 'sec-fetch-site: same-origin' \
+        -H 'sec-fetch-mode: cors' \
+        -H 'sec-fetch-dest: empty' \
+        -H 'referer: https://v2.freeyes.xyz/user/shop' \
+        -H 'accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7,en-GB;q=0.6' \
+        -H 'cookie: PHPSESSID=piv8bj8i4584v3e6idd89iggpf; __cfduid=dc7043bc0a04861bc19d7bff5834671441612248325; uid=580646; email=yygqjiushiwo%40gmail.com; key=34302bd8485f74cfb056f3b92d028a95642f731684f20; ip=6737e6ae1ee148007b7fbd03f17f00d4; expire_in=1615013170' \
+        --data-raw 'coupon=&shop=8&autorenew=1&disableothers=1' \
+        --compressed
+        curl 'https://v2.freeyes.xyz/user/buy' \
+        -H 'authority: v2.freeyes.xyz' \
+        -H 'accept: application/json, text/javascript, */*; q=0.01' \
+        -H 'x-requested-with: XMLHttpRequest' \
+        -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36 Edg/87.0.664.41' \
+        -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
+        -H 'origin: https://v2.freeyes.xyz' \
+        -H 'sec-fetch-site: same-origin' \
+        -H 'sec-fetch-mode: cors' \
+        -H 'sec-fetch-dest: empty' \
+        -H 'referer: https://v2.freeyes.xyz/user/shop' \
+        -H 'accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7,en-GB;q=0.6' \
+        -H 'cookie: PHPSESSID=ej79jhik4hojb6mg1l3orofiet; __cfduid=dd2c874e178daeca6b798cf3d9e36eee61612248394; uid=580647; email=nainaiwoai%40outlook.com; key=eb74a3474da840d87dec4de339dfb1159e9bb65e6cb92; ip=9cd70e7c6613cbc7aa5a7f3dc14ace50; expire_in=1615013243' \
+        --data-raw 'coupon=&shop=8&autorenew=1&disableothers=1' \
+        --compressed
+        curl 'https://v2.freeyes.xyz/user/buy' \
+        -H 'authority: v2.freeyes.xyz' \
+        -H 'accept: application/json, text/javascript, */*; q=0.01' \
+        -H 'x-requested-with: XMLHttpRequest' \
+        -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36 Edg/87.0.664.41' \
+        -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
+        -H 'origin: https://v2.freeyes.xyz' \
+        -H 'sec-fetch-site: same-origin' \
+        -H 'sec-fetch-mode: cors' \
+        -H 'sec-fetch-dest: empty' \
+        -H 'referer: https://v2.freeyes.xyz/user/shop' \
+        -H 'accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7,en-GB;q=0.6' \
+        -H 'cookie: PHPSESSID=nljqa008cg4kte8tuu763tbs97; __cfduid=dbe3abf1399229f015e421cdae55a44a01612248650; uid=580648; email=nomowang%40gmail.com; key=b2b1d696d404b76bf50426c0c841e3d93781b9bf0bb38; ip=c0ea8440e6e0302c13ec0ef9fb200b37; expire_in=1615013522' \
+        --data-raw 'coupon=&shop=8&autorenew=1&disableothers=1' \
+        --compressed
+        curl 'https://v2.freeyes.xyz/user/buy' \
+        -H 'authority: v2.freeyes.xyz' \
+        -H 'accept: application/json, text/javascript, */*; q=0.01' \
+        -H 'x-requested-with: XMLHttpRequest' \
+        -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36 Edg/87.0.664.41' \
+        -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
+        -H 'origin: https://v2.freeyes.xyz' \
+        -H 'sec-fetch-site: same-origin' \
+        -H 'sec-fetch-mode: cors' \
+        -H 'sec-fetch-dest: empty' \
+        -H 'referer: https://v2.freeyes.xyz/user/shop' \
+        -H 'accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7,en-GB;q=0.6' \
+        -H 'cookie: __cfduid=dbbbf2ca75bfeb05c1a9f3c6a418359bf1612248751; PHPSESSID=iprnhiqsq2n0mir5vs4gqdpfaa; uid=580649; email=cat%40gmail.com; key=1d7dde46cb73fe5ede14070da42016431dd912a65d696; ip=0cee51cd2b3ef5d6e1613d7636bf3c6a; expire_in=1615013623' \
+        --data-raw 'coupon=&shop=8&autorenew=1&disableothers=1' \
+        --compressed
+        curl 'https://v2.freeyes.xyz/user/buy' \
+        -H 'authority: v2.freeyes.xyz' \
+        -H 'accept: application/json, text/javascript, */*; q=0.01' \
+        -H 'x-requested-with: XMLHttpRequest' \
+        -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36 Edg/87.0.664.41' \
+        -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
+        -H 'origin: https://v2.freeyes.xyz' \
+        -H 'sec-fetch-site: same-origin' \
+        -H 'sec-fetch-mode: cors' \
+        -H 'sec-fetch-dest: empty' \
+        -H 'referer: https://v2.freeyes.xyz/user/shop' \
+        -H 'accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7,en-GB;q=0.6' \
+        -H 'cookie: PHPSESSID=5ct4454cda5if13pvg5netms8h; __cfduid=d8ec02be8c07d513ae4502faa104dec3a1612248860; uid=580650; email=clash_sipmle%40gmail.com; key=33a96629f2acc5fb822b9931c7bde732815e95ed01969; ip=48edb794a6fb1c064844007dc5a1b615; expire_in=1615013711' \
+        --data-raw 'coupon=&shop=8&autorenew=1&disableothers=1' \
+        --compressed
+        curl 'https://v2.freeyes.xyz/user/buy' \
+        -H 'authority: v2.freeyes.xyz' \
+        -H 'accept: application/json, text/javascript, */*; q=0.01' \
+        -H 'x-requested-with: XMLHttpRequest' \
+        -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36 Edg/87.0.664.41' \
+        -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
+        -H 'origin: https://v2.freeyes.xyz' \
+        -H 'sec-fetch-site: same-origin' \
+        -H 'sec-fetch-mode: cors' \
+        -H 'sec-fetch-dest: empty' \
+        -H 'referer: https://v2.freeyes.xyz/user/shop' \
+        -H 'accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7,en-GB;q=0.6' \
+        -H 'cookie: PHPSESSID=rstfd7q1oh3mrfuhlhtn50757a; __cfduid=d1ec277a004c95915614f35d255d73d1d1612248939; uid=580651; email=joker%40jiojio.com; key=d2d82998d984e25457f4e00badac11a4c2161da4f1d4d; ip=f26dcfd7c4dfa5f0dffb22708c1e59a0; expire_in=1615013791' \
+        --data-raw 'coupon=&shop=8&autorenew=1&disableothers=1' \
+        --compressed
+        curl 'https://v2.freeyes.xyz/user/buy' \
+        -H 'authority: v2.freeyes.xyz' \
+        -H 'accept: application/json, text/javascript, */*; q=0.01' \
+        -H 'x-requested-with: XMLHttpRequest' \
+        -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36 Edg/87.0.664.41' \
+        -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
+        -H 'origin: https://v2.freeyes.xyz' \
+        -H 'sec-fetch-site: same-origin' \
+        -H 'sec-fetch-mode: cors' \
+        -H 'sec-fetch-dest: empty' \
+        -H 'referer: https://v2.freeyes.xyz/user/shop' \
+        -H 'accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7,en-GB;q=0.6' \
+        -H 'cookie: PHPSESSID=smvvqos4hnd2i8nqtlsdb5a62c; __cfduid=d02858c363cccdd39c04abb93e990ac321612249027; uid=580652; email=wanlin%40outlook.com; key=e0cc34d1eb1cc6e7691e30a0354a552c257aa0f820660; ip=052b7a3e257cc25ae5b016506051514a; expire_in=1615013861' \
+        --data-raw 'coupon=&shop=8&autorenew=1&disableothers=1' \
+        --compressed
+      
