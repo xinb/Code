@@ -8,7 +8,7 @@ on:
   # 当master分支提交时
   workflow_dispatch:
   schedule:
-  - cron: '0 21 * * *'
+  - cron: '0 8 * * *'
 
 # 开始任务
 jobs:
